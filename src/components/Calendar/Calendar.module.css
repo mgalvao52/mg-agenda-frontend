@@ -1,0 +1,123 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 45%;
+    max-height: 300px;
+    margin:15px 15px 25px 15px;
+    box-sizing: border-box;
+    padding: 15px;
+    flex-direction: column;
+    
+}
+.month{
+    color: #2d2d2d;
+    width: 90%;
+    border-bottom: #6d6d6d solid 1px;
+    margin: 0 auto 5px auto;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.actual{
+    width: 100%;
+    color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.previous, .next{
+    width: 50px;
+    height: 30px;
+    font-size: 22px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #6d6d6d;
+    outline: none;
+    border-style: none;
+    border:transparent solid 2px;
+}
+.previous:hover,.next:hover{
+    color: #dfdfdf;
+    border-color: #6d6d6d;
+    cursor: pointer;
+}
+
+.calendar{
+    width: 90%;
+    max-height: 50%;
+    display: table;
+    table-layout: auto;
+    border-spacing: 0;
+    margin: 0 auto;
+    border-bottom: #6d6d6d solid 1px;
+}
+.header{
+    border-bottom: rgba(222, 222, 222, 0.1) solid 2px;
+}
+.weekname{
+    font-size: 18px;
+    color: #2d2d2d;
+    font-weight: 700;
+}
+.weekname th{
+    padding: 5px;
+    width: 45px;
+}
+.body{
+    width: 100%;
+    
+}
+.weekDays{
+    height: auto;
+}
+.weekDays td{
+    height: auto;
+}
+.day{
+    color: #f1eeee;
+    background-color: transparent;
+    border-style: none;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+    border:transparent solid 2px;
+    width: 35px;
+    height: 35px;
+    font-weight: 500;
+}
+.day::after{
+    content: '*';
+    color: transparent;
+}
+.day:hover{
+    cursor: pointer;
+   border-color: #6d6d6d;
+}
+.day:active{
+    font-size: 18px;
+}
+.today{
+    /* border: 2px solid rgb(218, 137, 33); */
+    color: rgb(218, 137, 33);
+    
+}
+.disable{
+    color: #797575;
+}
+
+.late::after{
+    color: red;
+}
+.now::after{
+    color: aqua;
+}
+.scheduled::after{
+    color: chartreuse;
+}
+
+
+

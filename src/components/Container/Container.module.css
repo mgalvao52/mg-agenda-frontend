@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.header{
+    display: flex;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--text-color); 
+}

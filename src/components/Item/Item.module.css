@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: 350px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px var(--box-shadow);
+    margin: 10px;
+    padding-bottom: 15px;
+}
+.itens{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.descricao{
+    font-size: 100%;
+    margin-bottom: 15px;
+    background-color: var(--background-color);
+    padding: 5px 5px 5px 25px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-color);
+}
